@@ -94,7 +94,6 @@ function BookAppoinment({ id, name, date }) {
       else if (hiddentime[selectedSlot.index]) {
          const payload = {
             appointment_time: hiddentime[selectedSlot.index][0],
-            // appointment_date: moment().format('YYYY-MM-DD'),
             appointment_date: date,
             patient: localStorage.getItem('user_id'),
             doctor: id,
@@ -191,8 +190,7 @@ function BookAppoinment({ id, name, date }) {
                      },
                   }}
                >
-                  {/* // show all the disease  */}
-                  <Typography gutterBottom variant='h5' mb={2}>
+                  {/* <Typography gutterBottom variant='h5' mb={2}>
                      Disease
                   </Typography>
                   <hr />
@@ -202,7 +200,6 @@ function BookAppoinment({ id, name, date }) {
                      sx={{
                         display: 'flex',
                         '@media (min-width:600px)': {
-                           // justifyContent: 'center',
                         },
                      }}
                   >
@@ -237,7 +234,7 @@ function BookAppoinment({ id, name, date }) {
                               </Button>
                            </Grid>
                         ))}
-                  </Grid>
+                  </Grid> */}
 
 
 
@@ -256,13 +253,11 @@ function BookAppoinment({ id, name, date }) {
                      }}
                   >
                      {isLoading ?
-                        // Array.from({ length: 3 }).map((_, index) => (
                         <Grid item xs={6} sm={6} md={6}>
                            <Skeleton
                               sx={{ border: '1px solid #13293D', borderRadius: '10px' }}
                               variant="rectangular" height={60} />
                         </Grid>
-                        // ))
                         :
                         times.map((timeSlot, index) => (
                            <Grid item key={index} xs={12} sm={8} md={6}>
@@ -320,7 +315,6 @@ function BookAppoinment({ id, name, date }) {
                      </DialogContent>
 
                      <DialogActions>
-
                         <Button
                            disabled={isBooking}
                            onClick={handleCloseDialog} color='primary'>
@@ -344,7 +338,6 @@ function BookAppoinment({ id, name, date }) {
                   </Dialog>
                </Paper>
             </Grid>
-
          </Grid>
       </Container>
    )

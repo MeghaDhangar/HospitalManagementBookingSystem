@@ -141,9 +141,11 @@ const DocUpdate = () => {
          })
          const data = await response.json()
          return data
-           console.log(error)
+      }catch{
+         console.log(error)
       }
    }
+
    return (
       <StyledFormWrapper>
          <StyledPaper elevation={3}>

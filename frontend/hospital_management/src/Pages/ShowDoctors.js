@@ -110,7 +110,6 @@ function ShowDoctors() {
                         <Typography variant='h5' component='div' sx={{ padding: '12px' }}>
                            {doctor.employee ? doctor.employee.employee_name : 'Unknown Doctor'}
                            <Typography variant='body2' color='text.secondary'>
-                           {/* {diseases?.join(', ') || 'No specialist'} */}
                            {doctor.disease_specialist.map((disease, index) => (
                                  <span key={index}>{disease.disease_name } </span>
                               ))}

@@ -47,7 +47,6 @@ function DoctorPage() {
    const {
       data: filterDoc,
       isFetching: DocFetch,
-      // isLoading: isDoctorsLoading,
    } = useGetAllDoctorsQuery(selectedDiseases)
    let fill = {
       disease: selectedDiseases,
@@ -130,7 +129,6 @@ function DoctorPage() {
       return (
          <Grid item xs={12} md={3} sm={6}>
             <Card sx={{ borderRadius: '2px', display: 'flex', flexDirection: 'column', boxShadow: 'rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px', padding: '20px' }}>
-               {/* <CardActionArea sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', flex: 1 }}> */}
                <div style={{ textAlign: 'center'  }}>
                   <Image height={70} width={70} src={image} style={{ borderRadius: '50%', marginTop: '5px' }} />
                   <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 700, marginTop: 1, color: colors.secondary }}>
@@ -144,8 +142,6 @@ function DoctorPage() {
                   </Typography>
                   <Typography variant="body2" sx={{ marginTop: 1, color: colors.primary }}>
                      {diseases?.join(', ') || 'No specialist'}
-                     {/* {result?.disease_specialist[0]?.disease_name}  */}
-
                   </Typography>
                </div>
 
@@ -259,7 +255,6 @@ function DoctorPage() {
                         renderInput={(params) => (
                            <TextField
                               {...params}
-                              //  label="Search input"
                               InputProps={{
                                  ...params.InputProps,
                                  placeholder: DiseaseLoading
@@ -309,7 +304,6 @@ function DoctorPage() {
                         renderInput={(params) => (
                            <TextField
                               {...params}
-                              // label='Select doctor'
                               InputProps={{
                                  ...params.InputProps,
                                  placeholder: DocFetch

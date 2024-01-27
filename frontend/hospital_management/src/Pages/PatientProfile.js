@@ -11,7 +11,6 @@ import AccordionDetails from '@mui/material/AccordionDetails'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import Chip from '@mui/material/Chip'
 import Button from '@mui/material/Button'
-// import patientLogo from '../assets/patient.png'
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider'
 import { DateCalendar } from '@mui/x-date-pickers/DateCalendar'
@@ -27,13 +26,10 @@ import { styled } from '@mui/material/styles'
 import Dialog from '@mui/material/Dialog'
 import DialogTitle from '@mui/material/DialogTitle'
 import DialogContent from '@mui/material/DialogContent'
-// import DialogActions from '@mui/material/DialogActions'
 import IconButton from '@mui/material/IconButton'
 import CloseIcon from '@mui/icons-material/Close'
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye'
 import Tooltip from '@mui/material/Tooltip'
-
-// import doctorImage from '@/assets/doctorIllustration.png'
 import { toast } from 'react-toastify'
 import Image from 'next/image'
 
@@ -184,9 +180,6 @@ function PatientProfile() {
       setHighlightedDays([])
       fetchHighlightedDays(date)
    }
-
-   //const doctorID =  appointments?.data[0]?.doctor?.doctor_id
-
    const shouldDisableDate = (date) => {
       const isSunday = date.day() === 0
       const formattedDate = date.format('DD-MM-YYYY')
@@ -194,9 +187,6 @@ function PatientProfile() {
 
       return isSunday || isRandomDisabledDate
    }
-
-   // const [] = React.useState(dayjs('2022-04-17'))
-
    const appointmentsByDate = Array.isArray(appointmentHistory?.data)
       ? appointmentHistory?.data.reduce((acc = [], appointment = []) => {
          const date = appointment.appointment_date
@@ -332,10 +322,6 @@ function PatientProfile() {
                                              '...'}
                                        </div>
                                     </Typography>
-                                    {/* <Typography variant='h6' component='h5'>
-                                         {patientInfo?.data[0].patient_age
-                                                 || 'loading...'}
-                                       </Typography> */}
                                     <Typography variant='h6' component='h5'>
                                        <div
                                           style={{

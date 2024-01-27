@@ -14,10 +14,7 @@ export default function Cards() {
     borderRadius: '10px',
     border:' 1px solid rgba( 255, 255, 255, 0.18 )',
   }
-  // const imageStyles = {
-  //   backgroundColor: '#13293D40', 
-  //   filter: 'brightness(0.5)',
-  // };
+
   return (
     <div>
       <Container maxWidth="lg">
@@ -29,9 +26,7 @@ export default function Cards() {
             <Grid key={index} item xs={12} md={3} sm={4}>
               <Card sx={{ maxWidth: 345 }} style={glass} >
                 <CardActionArea sx={{textAlign:'center'}} style={{ paddingTop: '15px'}}>
-                
                     <Image height={100} width={100} src={result.image} alt="image"  />
-                
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
                       {result.title}

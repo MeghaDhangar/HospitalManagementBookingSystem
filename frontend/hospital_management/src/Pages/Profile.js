@@ -69,7 +69,6 @@ const DoctorProfile = ({ id }) => {
   console.log(appointmentsByDate, "appointmentsByDate")
 
   const DoctorName = localStorage.getItem('user_name')
-  // console.log("doc name",DoctorName)
 
   return (
     <Container  maxWidth='lg' p={2} >
@@ -149,9 +148,7 @@ const DoctorProfile = ({ id }) => {
                 <Accordion key={date} sx={{ boxShadow: '0px 2px 1px rgba(0, 0, 0, 0.2)' }}>
                   <AccordionSummary
                     expandIcon={
-                      // <Badge badgeContent={appointmentsByDate[date].length} color='primary'>
                       <ExpandMoreIcon />
-                      // </Badge>
                     }
                     aria-controls='panel1a-content'
                     id='panel1a-header'

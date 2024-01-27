@@ -25,10 +25,6 @@ import IconButton from '@mui/material/IconButton'
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import datanotfound from '@/assets/dataNotFound.gif'
 import Image from 'next/image'
-
-
-// import Tooltip from '@mui/material/Tooltip';
-
 import Link from 'next/link'
 
 function Chart() {
@@ -239,9 +235,6 @@ function Chart() {
                                     >
                                        +
                                     </span>
-                                 </Grid>
-                                 <Grid item xs={6}>
-                                    {/* <div style={{backgroundColor:'white', borderTopLeftRadius:'50%',maxWidth:'5rem',height:'100px'}}></div> */}
                                  </Grid>
                               </Grid>
                            </div>

@@ -129,8 +129,7 @@ const GetActionButton = (row) => {
       employee_type: row?.params?.row?.employee_type,
       employee_role: row?.params?.row?.employee_role,
       employee_status: row?.params?.row?.employee_status,
-      // created_by: 'admin',
-      // updated_by: 'admin',
+   
    }
 
    // eslint-disable-next-line no-unused-vars
@@ -156,7 +155,6 @@ const GetActionButton = (row) => {
          handleCloseEditModal(); 
          handleCloseModal()
       } catch (error) {
-         // Handle error
          console.error('Error changing status:', error)
          toast.error('Error updating employee')
       }

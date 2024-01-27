@@ -1,7 +1,6 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import style from '@/styles/swiper.module.css'
-// Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
@@ -36,7 +35,6 @@ function SwipeableTextMobileStepper() {
       pagination={{
         clickable: true,
       }}
-      // navigation={true}
       modules={[Autoplay, Pagination,]}
       className="mySwiper"
       >

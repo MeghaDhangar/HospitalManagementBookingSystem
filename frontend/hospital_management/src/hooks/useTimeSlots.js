@@ -12,8 +12,6 @@ const useTimeSlots = () => {
 
 
       let skipSlot = total_slots - availableSlots;
-
-      // Simulate booked slots, replace this with your actual booked slots logic
       for (let i = 0; i < skipSlot; i++) {
         currentSlotTime.add(perSlotTime);
       }
@@ -26,8 +24,6 @@ const useTimeSlots = () => {
         nextAvailableSlots.push(slot);
         currentSlotTime.add(perSlotTime);
       }
-
-      // hashmap[start_time] = [...bookedSlots, ...nextAvailableSlots];
       hashmap[index+1] = [ ...nextAvailableSlots];
     });
 

@@ -30,7 +30,7 @@ export default function FixedContainer() {
                   xs={12}
                   md={3}
                   sx={{
-                     // padding: 2,
+                     
                      backgroundColor: '#fff',
                      color: '#13293D',
                   }}
@@ -49,7 +49,6 @@ export default function FixedContainer() {
                   xs={12}
                   md={3}
                   sx={{
-                     // padding: 2,
                      backgroundColor: '#fff',
                      color: '#13293D',
                   }}
@@ -68,7 +67,6 @@ export default function FixedContainer() {
                   xs={12}
                   md={3}
                   sx={{
-                     // padding: 2,
                      backgroundColor: '#fff',
                      color: '#13293D',
                   }}
@@ -87,7 +85,6 @@ export default function FixedContainer() {
                   xs={12}
                   md={3}
                   sx={{
-                     // paddingRight: 2,
                      backgroundColor: '#fff',
                      color: '#13293D',
                   }}
