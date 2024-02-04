@@ -5,7 +5,6 @@ import Link from '@mui/material/Link'
 import Image from 'next/image'
 import { colors } from '../styles/theme'
 import Logo from '../assets/footerimages/whiteSga.png'
-
 const Footer = () => {
    return (
       <Grid
@@ -105,7 +104,6 @@ const Footer = () => {
                      <Twitter />
                   </Link>
                </Grid>
-
                <Grid item xs={12} sm={3}>
                   <Typography
                      variant='body1'
