@@ -35,8 +35,6 @@ const drawerWidth = 240
 const pages = [{ label: 'Doctor', route: '/showdoctors' },
 { label: 'Book Appointment', route: '/doctorpage' },
 { label: 'View Appointment', route: '/viewappoinment' },];
-
-
 function ResponsiveAppBar(props) {
    //eslint-disable-next-line
    let isLogin = localStorage.getItem('isLogin');
