@@ -38,7 +38,6 @@ const pages = [{ label: 'Doctor', route: '/showdoctors' },
 
 
 function ResponsiveAppBar(props) {
-
    //eslint-disable-next-line
    let isLogin = localStorage.getItem('isLogin');
    const navigate = useRouter();
@@ -66,7 +65,6 @@ function ResponsiveAppBar(props) {
          updateData()
       }
    }, [isSuccess, isFeching, refreshToken])
-
    const [isLoading, setIsLoading] = useState(false);
    const [loggedIn, setLoggedIn] = useState(isLogin ? true : false);
    // eslint-disable-next-line no-unused-vars
@@ -79,8 +77,6 @@ function ResponsiveAppBar(props) {
    const handleOpenUserMenu = (event) => {
       setAnchorElUser(event.currentTarget);
    };
-
-
    const handleCloseUserMenu = () => {
       setAnchorElUser(null);
    };
@@ -88,8 +84,6 @@ function ResponsiveAppBar(props) {
    const handleDrawerToggle = () => {
       setMobileOpen((prevState) => !prevState)
    }
-
-
    const getUserSettings = () => {
       const settings = [];
       const userRole = localStorage.getItem('user_role');
@@ -227,7 +221,6 @@ function ResponsiveAppBar(props) {
          </List>
       </Box>
    )
-
    const container = window !== undefined ? () => window().document.body : undefined
    return (
       <div>
